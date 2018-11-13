@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9E320869219B32AB0039A931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320868219B32AB0039A931 /* AppDelegate.swift */; };
-		9E32086B219B32AB0039A931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32086A219B32AB0039A931 /* ViewController.swift */; };
 		9E32086E219B32AB0039A931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E32086C219B32AB0039A931 /* Main.storyboard */; };
 		9E320870219B32AD0039A931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E32086F219B32AD0039A931 /* Assets.xcassets */; };
 		9E320873219B32AD0039A931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E320871219B32AD0039A931 /* LaunchScreen.storyboard */; };
 		9E32087E219B32AE0039A931 /* randomNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32087D219B32AE0039A931 /* randomNumberTests.swift */; };
 		9E320889219B32AE0039A931 /* randomNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320888219B32AE0039A931 /* randomNumberUITests.swift */; };
+		9E320897219B33410039A931 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320896219B33410039A931 /* ItemsViewController.swift */; };
+		9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32089A219B3B210039A931 /* NumberAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		9E320865219B32AA0039A931 /* randomNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randomNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E320868219B32AB0039A931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E32086A219B32AB0039A931 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E32086D219B32AB0039A931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E32086F219B32AD0039A931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E320872219B32AD0039A931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		9E320884219B32AE0039A931 /* randomNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randomNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E320888219B32AE0039A931 /* randomNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomNumberUITests.swift; sourceTree = "<group>"; };
 		9E32088A219B32AE0039A931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E320896219B33410039A931 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		9E32089A219B3B210039A931 /* NumberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				9E320868219B32AB0039A931 /* AppDelegate.swift */,
-				9E32086A219B32AB0039A931 /* ViewController.swift */,
 				9E32086C219B32AB0039A931 /* Main.storyboard */,
 				9E32086F219B32AD0039A931 /* Assets.xcassets */,
 				9E320871219B32AD0039A931 /* LaunchScreen.storyboard */,
 				9E320874219B32AD0039A931 /* Info.plist */,
+				9E320896219B33410039A931 /* ItemsViewController.swift */,
+				9E32089A219B3B210039A931 /* NumberAPI.swift */,
 			);
 			path = randomNumber;
 			sourceTree = "<group>";
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E32086B219B32AB0039A931 /* ViewController.swift in Sources */,
+				9E320897219B33410039A931 /* ItemsViewController.swift in Sources */,
 				9E320869219B32AB0039A931 /* AppDelegate.swift in Sources */,
+				9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
