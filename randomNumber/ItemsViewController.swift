@@ -15,6 +15,5 @@ class ItemsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        store.fetchNumberFact()
     }
 }

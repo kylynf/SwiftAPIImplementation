@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let rootViewController = window!.rootViewController as! UINavigationController
-        let itemsViewController = rootViewController.topViewController as! ItemsViewController
+        let itemsViewController = rootViewController.topViewController as! AddNumberViewController
         itemsViewController.store = PhotoStore()
         
         return true

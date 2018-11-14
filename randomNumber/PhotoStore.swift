@@ -18,9 +18,9 @@ class PhotoStore{
     
     //create request to connect to API and ask for list of facts
     
-    func fetchNumberFact(){
+    func fetchNumberFact(number: String){
         //which URL do I use here???? base?
-        let url = NumberAPI.numberURL(number: "5")
+        let url = NumberAPI.numberURL(number: number)
         let request = URLRequest(url:url)
         let task = session.dataTask(with: request){
             (data, response, error) -> Void in

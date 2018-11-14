@@ -16,6 +16,7 @@
 		9E320897219B33410039A931 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320896219B33410039A931 /* ItemsViewController.swift */; };
 		9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32089A219B3B210039A931 /* NumberAPI.swift */; };
 		9E7DBD34219C9C700021F6D0 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */; };
+		9ED66190219CAF16008D4E02 /* AddNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6618F219CAF16008D4E02 /* AddNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9E320896219B33410039A931 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		9E32089A219B3B210039A931 /* NumberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAPI.swift; sourceTree = "<group>"; };
 		9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		9ED6618F219CAF16008D4E02 /* AddNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9E320896219B33410039A931 /* ItemsViewController.swift */,
 				9E32089A219B3B210039A931 /* NumberAPI.swift */,
 				9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */,
+				9ED6618F219CAF16008D4E02 /* AddNumberViewController.swift */,
 			);
 			path = randomNumber;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E320897219B33410039A931 /* ItemsViewController.swift in Sources */,
+				9ED66190219CAF16008D4E02 /* AddNumberViewController.swift in Sources */,
 				9E320869219B32AB0039A931 /* AppDelegate.swift in Sources */,
 				9E7DBD34219C9C700021F6D0 /* PhotoStore.swift in Sources */,
 				9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */,
