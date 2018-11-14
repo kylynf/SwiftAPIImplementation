@@ -21,9 +21,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numbers" translatesAutoresizingMaskIntoConstraints="NO" id="tYt-GW-rlm">
                                 <rect key="frame" x="0.0" y="-233" width="375" height="900"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a random number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DX8-bJ-QRk">
-                                <rect key="frame" x="84" y="303" width="206" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a random number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DX8-bJ-QRk">
+                                <rect key="frame" x="99" y="303" width="176.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -32,23 +31,20 @@
                                 <rect key="frame" x="172" y="-263" width="30" height="30"/>
                                 <state key="normal" title="GO"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-YW-MgA">
-                                <rect key="frame" x="66" y="58" width="243" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-YW-MgA">
+                                <rect key="frame" x="123" y="58" width="129" height="147"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter a random number between 1 and 100 inclusive to get a fact about that number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-zK-TvA">
-                                <rect key="frame" x="52" y="178" width="271" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please enter a random number between 1 and 100 inclusive to get a fact about that number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-zK-TvA">
+                                <rect key="frame" x="-205" y="178" width="785" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qX2-9t-cwU">
-                                <rect key="frame" x="144" y="333" width="87" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qX2-9t-cwU">
+                                <rect key="frame" x="172.5" y="333" width="30" height="82"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="GO">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,10 +56,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DX8-bJ-QRk" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="0eq-89-X0n"/>
+                            <constraint firstItem="RgB-YW-MgA" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="3Zc-c6-Cqe"/>
+                            <constraint firstItem="qX2-9t-cwU" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="HMI-4M-Qfy"/>
                             <constraint firstItem="tYt-GW-rlm" firstAttribute="leading" secondItem="cii-at-KNd" secondAttribute="leading" id="KKQ-4o-2CV"/>
                             <constraint firstItem="tYt-GW-rlm" firstAttribute="top" secondItem="9YX-YY-EMf" secondAttribute="bottom" id="N3C-iO-xfo"/>
                             <constraint firstItem="cii-at-KNd" firstAttribute="trailing" secondItem="tYt-GW-rlm" secondAttribute="trailing" id="PEG-ft-pLJ"/>
                             <constraint firstItem="cii-at-KNd" firstAttribute="bottom" secondItem="tYt-GW-rlm" secondAttribute="bottom" id="T3P-9C-u6A"/>
+                            <constraint firstItem="V6V-zK-TvA" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="r3G-3D-0CO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cii-at-KNd"/>
                     </view>

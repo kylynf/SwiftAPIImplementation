@@ -15,6 +15,7 @@
 		9E320889219B32AE0039A931 /* randomNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320888219B32AE0039A931 /* randomNumberUITests.swift */; };
 		9E320897219B33410039A931 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320896219B33410039A931 /* ItemsViewController.swift */; };
 		9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32089A219B3B210039A931 /* NumberAPI.swift */; };
+		9E7DBD34219C9C700021F6D0 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9E32088A219B32AE0039A931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E320896219B33410039A931 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		9E32089A219B3B210039A931 /* NumberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAPI.swift; sourceTree = "<group>"; };
+		9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9E320874219B32AD0039A931 /* Info.plist */,
 				9E320896219B33410039A931 /* ItemsViewController.swift */,
 				9E32089A219B3B210039A931 /* NumberAPI.swift */,
+				9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */,
 			);
 			path = randomNumber;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				9E320897219B33410039A931 /* ItemsViewController.swift in Sources */,
 				9E320869219B32AB0039A931 /* AppDelegate.swift in Sources */,
+				9E7DBD34219C9C700021F6D0 /* PhotoStore.swift in Sources */,
 				9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

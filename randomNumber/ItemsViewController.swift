@@ -9,7 +9,12 @@
 import UIKit
 
 class ItemsViewController: UITableViewController {
-
-
-
+    
+    var store: PhotoStore!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        store.fetchNumberFact()
+    }
 }
