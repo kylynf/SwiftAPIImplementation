@@ -29,23 +29,13 @@
                                     <constraint firstAttribute="height" constant="305" id="Bpv-nd-vzK"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a random number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DX8-bJ-QRk">
-                                <rect key="frame" x="99" y="318" width="176.5" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Xwb-PE-pkx"/>
-                                    <constraint firstAttribute="width" constant="176.5" id="hbj-XD-3pr"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a random number to get a fact about that number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-zK-TvA">
                                 <rect key="frame" x="13.5" y="225" width="348" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="1ie-AZ-LoO"/>
                                     <constraint firstAttribute="width" constant="348" id="bJA-i3-exU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="32" id="shW-dQ-2BD"/>
                                     <constraint firstAttribute="width" constant="30" id="zq5-K6-UZ8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <state key="normal" title="GO">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -69,13 +59,38 @@
                                     <constraint firstAttribute="height" constant="36" id="hDZ-Yh-amI"/>
                                     <constraint firstAttribute="width" constant="129" id="lVg-kN-aad"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySH-ZP-fai">
+                                <rect key="frame" x="79" y="394" width="216" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZGL-0e-PfV"/>
+                                    <constraint firstAttribute="width" constant="216" id="dkL-hf-xCW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <state key="normal" title="SEE TABLE OF FACTS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WUf-HR-aP1" kind="show" identifier="showListPage" id="fwk-VD-a6f"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a random number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DX8-bJ-QRk">
+                                <rect key="frame" x="83" y="318" width="208" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xwb-PE-pkx"/>
+                                    <constraint firstAttribute="width" constant="208" id="hbj-XD-3pr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ySH-ZP-fai" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="5qH-NK-r2t"/>
                             <constraint firstItem="DX8-bJ-QRk" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="5wg-89-cNt"/>
                             <constraint firstItem="V6V-zK-TvA" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="Dfz-bz-rEI"/>
                             <constraint firstItem="cii-at-KNd" firstAttribute="trailing" secondItem="aOJ-6C-8bo" secondAttribute="trailing" constant="16" id="Dg3-Br-vg4"/>
@@ -90,7 +105,9 @@
                             <constraint firstItem="RgB-YW-MgA" firstAttribute="top" secondItem="cii-at-KNd" secondAttribute="top" constant="115" id="eW4-sz-O1O"/>
                             <constraint firstItem="qX2-9t-cwU" firstAttribute="top" secondItem="DX8-bJ-QRk" secondAttribute="bottom" constant="11" id="fhK-YL-8uE"/>
                             <constraint firstItem="cii-at-KNd" firstAttribute="bottom" secondItem="aOJ-6C-8bo" secondAttribute="bottom" constant="243" id="mwh-H8-cnJ"/>
+                            <constraint firstItem="ySH-ZP-fai" firstAttribute="top" secondItem="qX2-9t-cwU" secondAttribute="bottom" constant="3" id="plZ-rr-nGu"/>
                             <constraint firstItem="DX8-bJ-QRk" firstAttribute="top" secondItem="V6V-zK-TvA" secondAttribute="bottom" constant="8" id="vWu-IO-rUQ"/>
+                            <constraint firstItem="DX8-bJ-QRk" firstAttribute="centerX" secondItem="8KY-Fh-VET" secondAttribute="centerX" id="yR9-Vp-D0A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cii-at-KNd"/>
                     </view>
@@ -111,7 +128,9 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Kv-Dj-Ll8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.40784313729999999" green="0.80392156859999997" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="180" id="6ph-Tm-L7B" customClass="ItemCell" customModule="randomNumber" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="180"/>
@@ -120,23 +139,23 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-tm-dEG">
-                                            <rect key="frame" x="16" y="60" width="343" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="0oF-TK-Ofu"/>
-                                                <constraint firstAttribute="width" constant="343" id="90D-UQ-ucq"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBw-Cq-zxc">
                                             <rect key="frame" x="16" y="19" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="343" id="EfO-SP-3ye"/>
                                                 <constraint firstAttribute="height" constant="50" id="aRm-E2-xOe"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-tm-dEG">
+                                            <rect key="frame" x="16" y="59" width="343" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="0oF-TK-Ofu"/>
+                                                <constraint firstAttribute="width" constant="343" id="90D-UQ-ucq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -152,6 +171,7 @@
                                         <constraint firstItem="FBw-Cq-zxc" firstAttribute="leading" secondItem="h8C-W8-HfH" secondAttribute="leadingMargin" id="y8b-7Q-3RY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.40784313725490196" green="0.80392156862745101" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="factLabel" destination="sQz-tm-dEG" id="mIl-Au-3TH"/>
                                     <outlet property="numberLabel" destination="FBw-Cq-zxc" id="u3V-hk-6oX"/>
@@ -191,4 +211,7 @@
         <image name="newwhite" width="225" height="225"/>
         <image name="numbers" width="1600" height="900"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fwk-VD-a6f"/>
+    </inferredMetricsTieBreakers>
 </document>

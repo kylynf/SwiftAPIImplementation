@@ -70,6 +70,7 @@ class PhotoStore{
     init(){
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path) as? [NumberFact]{
             factList = archivedItems
+            print("loading items")
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NumberFact: NSCoding {
+class NumberFact: NSObject, NSCoding {
     
     let text: String
     let number: Int
@@ -27,9 +27,9 @@ class NumberFact: NSCoding {
     
     required init(coder aDecoder: NSCoder) {
         text = aDecoder.decodeObject(forKey: "text" ) as! String
-        number = aDecoder.decodeObject(forKey: "number" ) as! Int
+        number = aDecoder.decodeInteger(forKey: "number" )
         
-        //super.init()
+        super.init()
     }
     
     

@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let rootViewController = window!.rootViewController as! UINavigationController
         let itemsViewController = rootViewController.topViewController as! AddNumberViewController
-        itemsViewController.store = PhotoStore()
+        itemsViewController.store = itemStore
         
         return true
     }
