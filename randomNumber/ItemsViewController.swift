@@ -14,18 +14,27 @@ class ItemsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.rowHeight = 180
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: NSIndexPath) -> UITableViewCell{
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return store.factList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         
-        let item = itemStore.allItems[indexPath.row]
+        let item = store.factList[indexPath.row]
         
-        //configure cell with item
-        cell.numberLabel.text =
-        cell.factLabel.text =
+        cell.numberLabel.text = "\(item.number)"
+        cell.factLabel.text = "\(item.text)"
+        
         
         return cell
     }
+
 }

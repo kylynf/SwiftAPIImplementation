@@ -11,12 +11,18 @@ import Foundation
 enum NumbersResult {
     //what should the success case be??
     
-    //case success([Photo])
-    case success()
+    case success(NumberFact)
     case failure(Error)
 }
 
 class PhotoStore{
+    
+    var factList = [NumberFact]()
+    
+    func addFact(fact: NumberFact) {
+        factList.append(fact)
+    }
+    
     
     //hold onto an instance of URLSession
     private let session: URLSession = {
@@ -34,7 +40,9 @@ class PhotoStore{
             (data, response, error) -> Void in
             
             let result = self.processFactsRequest(data: data, error: error)
-            completion(result)
+            OperationQueue.main.addOperation {
+                completion(result)
+            }
         }
         task.resume()
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class randomNumberFact {
+class NumberFact {
     
     let text: String
     let number: Int
