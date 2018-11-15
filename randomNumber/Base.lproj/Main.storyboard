@@ -23,10 +23,10 @@
                                 <rect key="frame" x="0.0" y="-233" width="375" height="900"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newwhite" translatesAutoresizingMaskIntoConstraints="NO" id="aOJ-6C-8bo">
-                                <rect key="frame" x="16" y="119" width="343" height="282"/>
+                                <rect key="frame" x="16" y="119" width="343" height="305"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="0Z8-bH-fAV"/>
-                                    <constraint firstAttribute="height" constant="282" id="Bpv-nd-vzK"/>
+                                    <constraint firstAttribute="height" constant="305" id="Bpv-nd-vzK"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a random number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DX8-bJ-QRk">
@@ -89,7 +89,7 @@
                             <constraint firstItem="aOJ-6C-8bo" firstAttribute="leading" secondItem="cii-at-KNd" secondAttribute="leading" constant="16" id="cXO-gX-0S1"/>
                             <constraint firstItem="RgB-YW-MgA" firstAttribute="top" secondItem="cii-at-KNd" secondAttribute="top" constant="115" id="eW4-sz-O1O"/>
                             <constraint firstItem="qX2-9t-cwU" firstAttribute="top" secondItem="DX8-bJ-QRk" secondAttribute="bottom" constant="11" id="fhK-YL-8uE"/>
-                            <constraint firstItem="cii-at-KNd" firstAttribute="bottom" secondItem="aOJ-6C-8bo" secondAttribute="bottom" constant="266" id="mwh-H8-cnJ"/>
+                            <constraint firstItem="cii-at-KNd" firstAttribute="bottom" secondItem="aOJ-6C-8bo" secondAttribute="bottom" constant="243" id="mwh-H8-cnJ"/>
                             <constraint firstItem="DX8-bJ-QRk" firstAttribute="top" secondItem="V6V-zK-TvA" secondAttribute="bottom" constant="8" id="vWu-IO-rUQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cii-at-KNd"/>
