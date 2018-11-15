@@ -19,6 +19,18 @@ class PhotoStore{
     
     var factList = [NumberFact]()
     
+    //NSCoding
+    let itemArchiveURL: URL = {
+        let documentsDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectory = documentsDirectories.first!
+        return documentDirectory.appendingPathComponent("items.archive")
+    }()
+    
+    func saveChanges() -> Bool {
+        print("Saving items to: \(itemArchiveURL.path)")
+        return NSKeyedArchiver.archiveRootObject(factList, toFile: itemArchiveURL.path)
+    }
+    
     func addFact(fact: NumberFact) {
         factList.append(fact)
     }
@@ -52,6 +64,13 @@ class PhotoStore{
             return .failure(error!)
         }
         return NumberAPI.numbers(fromJSON: jsonData)
+    }
+    
+    //putting data back in after it is saved
+    init(){
+        if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path) as? [NumberFact]{
+            factList = archivedItems
+        }
     }
 }
 
