@@ -36,6 +36,7 @@ class AddNumberViewController: UIViewController {
                         self.store.addFact(fact: fact)
                         // go to the list page
                         self.performSegue(withIdentifier: "showListPage", sender: self)
+                        self.numberField.text = ""
                     case let .failure(error):
                         print("Didn't work: \(error)")
                     }
