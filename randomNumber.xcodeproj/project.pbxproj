@@ -16,6 +16,8 @@
 		9E320897219B33410039A931 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320896219B33410039A931 /* ItemsViewController.swift */; };
 		9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32089A219B3B210039A931 /* NumberAPI.swift */; };
 		9E7DBD34219C9C700021F6D0 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */; };
+		9EAE0964219D106C006116B0 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE0963219D106C006116B0 /* Number.swift */; };
+		9EAE0966219D2A6A006116B0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE0965219D2A6A006116B0 /* ItemCell.swift */; };
 		9ED66190219CAF16008D4E02 /* AddNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6618F219CAF16008D4E02 /* AddNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		9E320896219B33410039A931 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		9E32089A219B3B210039A931 /* NumberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAPI.swift; sourceTree = "<group>"; };
 		9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		9EAE0963219D106C006116B0 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		9EAE0965219D2A6A006116B0 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		9ED6618F219CAF16008D4E02 /* AddNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,8 @@
 				9E32089A219B3B210039A931 /* NumberAPI.swift */,
 				9E7DBD33219C9C700021F6D0 /* PhotoStore.swift */,
 				9ED6618F219CAF16008D4E02 /* AddNumberViewController.swift */,
+				9EAE0963219D106C006116B0 /* Number.swift */,
+				9EAE0965219D2A6A006116B0 /* ItemCell.swift */,
 			);
 			path = randomNumber;
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 			files = (
 				9E320897219B33410039A931 /* ItemsViewController.swift in Sources */,
 				9ED66190219CAF16008D4E02 /* AddNumberViewController.swift in Sources */,
+				9EAE0964219D106C006116B0 /* Number.swift in Sources */,
 				9E320869219B32AB0039A931 /* AppDelegate.swift in Sources */,
+				9EAE0966219D2A6A006116B0 /* ItemCell.swift in Sources */,
 				9E7DBD34219C9C700021F6D0 /* PhotoStore.swift in Sources */,
 				9E32089B219B3B210039A931 /* NumberAPI.swift in Sources */,
 			);

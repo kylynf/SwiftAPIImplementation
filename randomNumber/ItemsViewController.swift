@@ -16,4 +16,16 @@ class ItemsViewController: UITableViewController {
         super.viewDidLoad()
         
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
+        
+        let item = itemStore.allItems[indexPath.row]
+        
+        //configure cell with item
+        cell.numberLabel.text =
+        cell.factLabel.text =
+        
+        return cell
+    }
 }
